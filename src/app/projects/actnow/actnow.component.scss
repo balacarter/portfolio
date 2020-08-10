@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.pics {
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  color: darkgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.grid-halves {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+
+  .col {
+    flex-basis: 50%;
+  }
+
+  .col-small {
+    display: flex;
+    width: 25%;
+  }
+
+  .col-large {
+    display: flex;
+  }
+}

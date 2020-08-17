@@ -10,6 +10,7 @@ import { MainViewComponent } from './main/main-view/main-view.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ScrollDirective } from './main/navigation/scroll.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MainComponent,
     NavigationComponent,
     ActnowComponent,
-    MainViewComponent
+    MainViewComponent,
+    ScrollDirective
   ],
   imports: [
     BrowserModule,

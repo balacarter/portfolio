@@ -1,19 +1,13 @@
-<div class="flex-container">
-  <mat-tab-group class="top-bar">
-    <mat-tab label="ACTnow Foundation">
-      <ng-template matTabContent class="flex-container">
-        <app-actnow></app-actnow>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Video Game Mods">
-      <ng-template matTabContent>
-        <app-actnow></app-actnow>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Python Projects">
-      <ng-template matTabContent>
-        <app-actnow></app-actnow>
-      </ng-template>
-    </mat-tab>
-  </mat-tab-group>
-</div>
+<nav mat-tab-nav-bar appScroll mat-align-tabs="center" class="top-bar">
+  <a mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.path"
+      routerLinkActive #rla="routerLinkActive"
+      [routerLinkActiveOptions]="{exact:true}"
+      [active]="rla.isActive">
+    {{link.label}}
+  </a>
+</nav>
+
+
+<router-outlet></router-outlet>

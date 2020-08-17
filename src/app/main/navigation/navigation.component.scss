@@ -1,10 +1,10 @@
 .flex-container {
   display: flex;
-  justify-content: center;
-  
+  flex-flow: wrap;
+
 }
 
 .top-bar {
-  width: 75%;
-
+  background-color: white;
+  width: 100%;
 }

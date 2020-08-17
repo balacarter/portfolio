@@ -2,7 +2,15 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
+  margin-bottom: 24px;
+}
+
+.container-inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #fafafa;
 }
 
 .container-row {
@@ -24,13 +32,17 @@
 
 .pics {
   margin-bottom: 12px;
-  max-width: 600px;
+  max-width: 565px;
   border-radius: 5px;
+}
+
+.shrink {
+  max-width: 535px;
 }
 
 .title {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 300;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -56,11 +68,12 @@
 }
 
 .banner {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
+  margin: 30px;
+  .pic {
+    margin-bottom: 12px;
+    max-width: 100%;
+    border-radius: 5px;
+  }
 
 }
 

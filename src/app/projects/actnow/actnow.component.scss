@@ -32,7 +32,7 @@
 
 .pics {
   margin-bottom: 12px;
-  max-width: 565px;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -66,6 +66,12 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+ul {
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 10px;
+}
 
 .banner {
   margin: 30px;
@@ -80,11 +86,14 @@
 .grid-halves {
   display: flex;
   flex-flow: row;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 
   .col {
-    flex-basis: 50%;
+    display: flex;
+    flex-flow: column;
+    width: 45%;
+    margin: 10px;
   }
 
   .col-small {

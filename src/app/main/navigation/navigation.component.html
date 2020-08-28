@@ -1,4 +1,6 @@
-<nav mat-tab-nav-bar appScroll mat-align-tabs="center" class="top-bar">
+<nav mat-tab-nav-bar mat-align-tabs="center" class="top-bar"
+ #stickyMenu
+ [class.sticky]="sticky">
   <a mat-tab-link
       *ngFor="let link of navLinks"
       [routerLink]="link.path"

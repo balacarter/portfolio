@@ -15,6 +15,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
+import { MeComponent } from './main/me/me.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatInputModule } from '@angular/material/input';
     ActnowComponent,
     MainViewComponent,
     ScrollDirective,
-    SurveyComponent
+    SurveyComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule,

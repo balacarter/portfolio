@@ -7,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent {
   navLinks = [
-    { path: 'actnow', label: 'ACTnow' },
-    { path: 'main-view', label: 'The Solution' },
-    { path: 'actnow', label: 'The Game' },
-    { path: 'actnow', label: 'Probability calculator' },
+    { path: 'me', label: 'About Me' },
+    { path: 'actnow', label: 'ACTnow' }
   ];
 
 

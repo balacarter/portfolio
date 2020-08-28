@@ -1,5 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
 
+.container {
+  display: flex;
+  flex-flow: column;
+  background-color: #f5f5f5;
+  min-height: 95%;
+  margin-bottom: 24px;
+}
+
+.container-inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.container-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.top-row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.grid-halves {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .col-small {
+    display: flex;
+    width: 35%;
+    flex-flow: column;
+    margin: 10px;
+  }
+
+  .col-large {
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+  }
+}
+.col {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  width: 45%;
+  margin: 10px;
+  
+}  
+.box {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border-width: 2px;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.block {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 24px;
+}
+
+.title-left {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #858383;
+  text-align: center;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 main {
   display: flex;

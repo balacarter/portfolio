@@ -1,25 +1,3 @@
-.container {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  background-color: #fafafa;
-  margin-bottom: 24px;
-}
-
-.container-inner {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  background-color: #fafafa;
-}
-
-.container-row {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  background-color: white;
-}
-
 .icons {
   padding: 10px;
   max-width: 75px;
@@ -39,33 +17,6 @@
 .shrink {
   max-width: 535px;
 }
-
-.title {
-  font-size: 24px;
-  font-weight: 300;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.title-left {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.subtitle {
-  font-size: 16px;
-  font-weight: lighter;
-  color: #858383;
-  text-align: center;
-}
-
-.text-body {
-  font-size: 16px;
-  font-weight: lighter;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 ul {
   font-size: 16px;
   font-weight: lighter;
@@ -74,42 +25,15 @@ ul {
 }
 
 .banner {
-  margin: 30px;
+  display: flex;
+  justify-content: center;
   .pic {
+    display: block;
     margin-bottom: 12px;
     max-width: 100%;
-    border-radius: 5px;
   }
 
 }
-
-.grid-halves {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  .col {
-    display: flex;
-    flex-flow: column;
-    width: 45%;
-    margin: 10px;
-  }
-
-  .col-small {
-    display: flex;
-    width: 35%;
-    flex-flow: column;
-    margin: 10px;
-  }
-
-  .col-large {
-    display: flex;
-    flex-flow: column;
-    margin: 10px;
-  }
-}
-
 .icon-list {
   list-style: none;
 }
@@ -117,15 +41,4 @@ ul {
 .list-item {
   display: flex;
   flex-flow: row;
-}
-
-.box {
-  text-align: justify;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-  border-width: 2px;
-  height: fit-content;
-  padding: 10px;
-  margin-bottom: 10px;
 }

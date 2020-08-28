@@ -9,7 +9,6 @@ import { MainViewComponent } from './main/main-view/main-view.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ScrollDirective } from './main/navigation/scroll.directive';
 import { SurveyComponent } from './projects/actnow/survey/survey.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
@@ -24,7 +23,6 @@ import { MeComponent } from './main/me/me.component';
     NavigationComponent,
     ActnowComponent,
     MainViewComponent,
-    ScrollDirective,
     SurveyComponent,
     MeComponent
   ],

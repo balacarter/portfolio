@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.survey {
+  width: 100%;
+}
+
+.radio-button {
+  padding: 5px;
+}
+
+mat-form-field {
+  display: block;
+}
+
+mat-checkbox {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.title {
+  margin: 5px;
+}
+
+.card {
+  justify-content: center;
+  margin: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+
+.card-content {
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.full-width {
+  width: 100%;
+}
+
+.third-width {
+  width: 33%;
+}
+
+td {
+  padding-right: 4px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  mat-card-title {
+    font-size: 14px;
+
+  }
+
+  .full-width {
+    width: 50%;
+  }
+  
+  .half-width {
+    width: 30%;
+  }
+}

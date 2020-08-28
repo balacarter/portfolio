@@ -1,0 +1,36 @@
+  .profile-pic {
+      border-radius: 50%;
+      max-width: 60%;
+      min-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+
+  .tagline {
+    font-size: 30px;
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    text-align: center;
+    .sub {
+      font-size: 16px;
+      font-weight: 400;
+      color: gray;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+  .icons {
+    width: 30px;
+    margin-left: 10px;
+  }
+
+  .box {
+    margin-left: 10px;
+    width: 30%;
+  }
+  .container-row {
+  }

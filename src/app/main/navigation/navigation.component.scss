@@ -7,8 +7,8 @@
 .top-bar {
   background-color: white;
   width: 100%;
+  z-index: 10;
 }
-
 .sticky{
   position: fixed;
   top: 0;

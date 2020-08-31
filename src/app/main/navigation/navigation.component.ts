@@ -23,12 +23,14 @@ export class NavigationComponent implements OnInit{
 
   ngAfterViewInit(){
     this.elementPosition = this.menuElement.nativeElement.offsetTop;
+    console.log(this.elementPosition.offsetTop);
   }
 
   @HostListener('window:scroll', ['$event'])
   handleScroll(){
     const windowScroll = window.pageYOffset;
-    if(windowScroll >= 10){
+    if(windowScroll > this.elementPosition){
+      console.log(this.elementPosition.offsetTop);
       this.sticky = true;
     } else {
       this.sticky = false;

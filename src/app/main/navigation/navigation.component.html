@@ -1,15 +1,16 @@
-<nav mat-tab-nav-bar mat-align-tabs="center" class="top-bar"
- #stickyMenu
- [class.sticky]="sticky">
-  <a mat-tab-link
-      *ngFor="let link of navLinks"
-      [routerLink]="link.path"
-      routerLinkActive #rla="routerLinkActive"
-      [routerLinkActiveOptions]="{exact:true}"
-      [active]="rla.isActive">
-    {{link.label}}
-  </a>
-</nav>
-
+<div class="top-bar"
+#stickyMenu
+[class.sticky]="sticky">
+  <nav mat-tab-nav-bar mat-align-tabs="center">
+    <a mat-tab-link
+        *ngFor="let link of navLinks"
+        [routerLink]="link.path"
+        routerLinkActive #rla="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:true}"
+        [active]="rla.isActive">
+      {{link.label}}
+    </a>
+  </nav>
+</div>
 
 <router-outlet></router-outlet>

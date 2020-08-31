@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MeComponent } from './main/me/me.component';
+import { ScrollDirective } from './directives/scroll.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MeComponent } from './main/me/me.component';
     ActnowComponent,
     MainViewComponent,
     SurveyComponent,
-    MeComponent
+    MeComponent,
+    ScrollDirective,
   ],
   imports: [
     BrowserModule,

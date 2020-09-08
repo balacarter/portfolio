@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { MeComponent } from './main/me/me.component';
@@ -52,6 +53,7 @@ import { ContactService } from './main/contact/contact.service';
     MatSelectModule,
     MatButtonModule,
     MatChipsModule,
+    MatSnackBarModule,
     ReactiveFormsModule
   ],
   providers: [ContactService],

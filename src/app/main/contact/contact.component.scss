@@ -1,11 +1,15 @@
 .input-field {
     padding-left: 10px;
+    min-width: 200px;
 }
 .message-field {
     padding-left: 10px;
-    max-width: 390px;
-    min-width: 250px;
+    width: 100%;
 }
 textarea{
     height: 200px;
+}
+
+button {
+    margin-left: 10px;
 }

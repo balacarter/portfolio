@@ -7,10 +7,11 @@
         <mat-label>Email:</mat-label>
         <input matInput type="email" placeholder="your email" formControlName="email">
     </mat-form-field>
-    <p></p>
+    <br>
     <mat-form-field appearance="standard" class="message-field">
         <mat-label>Message:</mat-label>
         <textarea matInput placeholder="your message..." formControlName="message"></textarea>
     </mat-form-field>
-    <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
+    <br>
+    <button type="submit" mat-raised-button color="primary" [disabled]="!contactForm.valid">Submit</button>
 </form>

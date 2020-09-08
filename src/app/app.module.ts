@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Router } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NavigationComponent } from './main/navigation/navigation.component';
 import { ActnowComponent } from './projects/actnow/actnow.component';
 import { MainViewComponent } from './main/main-view/main-view.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -42,6 +46,7 @@ import { ContactService } from './main/contact/contact.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatTabsModule,
@@ -56,7 +61,7 @@ import { ContactService } from './main/contact/contact.service';
     MatSnackBarModule,
     ReactiveFormsModule
   ],
-  providers: [ContactService],
+  providers: [ContactService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

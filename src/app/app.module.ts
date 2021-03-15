@@ -29,6 +29,7 @@ import { MeComponent } from './main/me/me.component';
 import { ScrollDirective } from './directives/scroll.directive';
 import { ContactComponent } from './main/contact/contact.component';
 import { ContactService } from './main/contact/contact.service';
+import { ThearqiveComponent } from './projects/thearqive/thearqive.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { ContactService } from './main/contact/contact.service';
     MeComponent,
     ScrollDirective,
     ContactComponent,
+    ThearqiveComponent,
   ],
   imports: [
     BrowserModule,

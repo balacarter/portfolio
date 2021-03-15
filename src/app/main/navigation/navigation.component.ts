@@ -5,12 +5,24 @@ import { Component} from '@angular/core';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
+
+
 export class NavigationComponent{
   navLinks = [
-    { path: 'me', label: 'About Me' },
-    { path: 'actnow', label: 'ACTnow' }
+    {
+      path: 'me',
+      label: 'About Me'
+    },
+    {
+      path: 'actnow',
+      label: 'ACT Now'
+    },
+    /*{
+      path: 'thearqive',
+      label: 'The Arqive'
+    }*/
   ];
 
-  
+
 
 }

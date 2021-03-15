@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { ActnowComponent } from './projects/actnow/actnow.component';
+import { ThearqiveComponent } from './projects/thearqive/thearqive.component';
 import { MainViewComponent } from './main/main-view/main-view.component';
 import { MeComponent } from './main/me/me.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: '', component: MeComponent },
   { path: 'me', component: MeComponent },
   { path: 'actnow', component: ActnowComponent },
+  //{ path: 'thearqive', component: ThearqiveComponent },
   { path: 'main-view', component: MainViewComponent }
 ];
 
